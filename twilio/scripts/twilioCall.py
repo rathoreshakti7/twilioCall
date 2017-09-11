@@ -253,10 +253,7 @@ def slackNotificationSucess(onCallPerson,sessId,contactNo,alert,colorCode,callSt
 def callingSupport(onCallPerson,contactNo,team,supportLength,n,alert):
         print "calling to : "+ onCallPerson
         to = contactNo
-        #to='+918178996458'
-        #to='+918800395588'
-        #to='+918452977354'
-        phno='+16198320049'
+        phno='+1xxxxxxxxxxxxxxx'
         sourcefile='/opt/twilio/templates/'+metrics+'.xml'
         targetfile='/opt/twilio/alerts/'+metrics+'.xml'
         createAlertFile='cp "'+sourcefile+'" "'+targetfile+'"'
@@ -267,7 +264,7 @@ def callingSupport(onCallPerson,contactNo,team,supportLength,n,alert):
         replacemetric(targetfile,"$sessId",sessId)
 
         print "sessId " + sessId
-        key="JioBotqazQAZ"
+        key="xxxxxxxxxxxxxx"
 
         curl_command='curl -s -XPOST '+twilioUrl+' --data-urlencode "Url='+metricUri+'" --data-urlencode "To='+to+'" --data-urlencode "From='+phno+'" -u "'+accid+':'+accpwd+'" --data-urlencode "StatusCallback='+callBackUrl+'?key='+key+'&sessId='+sessId+'"  --data-urlencode "Method=GET" --data-urlencode "StatusCallbackMethod=POST" --data-urlencode "StatusCallbackEvent=initiated" --data-urlencode "StatusCallbackEvent=ringing" --data-urlencode "StatusCallbackEvent=answered" --data-urlencode "StatusCallbackEvent=completed"'
 

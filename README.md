@@ -77,11 +77,11 @@ Rejected : call answered
 Accepted : call answered and issue acknowledged
 
 
-curl -XPOST https://api.twilio.com/2010-04-01/Accounts/ACe385530df6d5d40c1203c6eaabf917a9/Calls.json \
+curl -XPOST https://api.twilio.com/2010-04-01/Accounts/xxxxxxxxxxxxxxxxxxxxxxxxx/Calls.json \
    --data-urlencode "Url=http://demo.twilio.com/docs/voice.xml" \
-   --data-urlencode "To=+918178996395" \
-   --data-urlencode "From=+16198320049" \
-   -u 'ACe385530df6d5d40c1203c6eaabf917a9:3d7b15919f83e0d10a27c5363e5405e5'
+   --data-urlencode "To=+91817xxxxx" \
+   --data-urlencode "From=+16xxxxxxxx9" \
+   -u 'Axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxa9:3d7bxxxxxxxxxx'
 
 
 curl -XPOST https://api.twilio.com/2010-04-01/Accounts/ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Calls.json \
