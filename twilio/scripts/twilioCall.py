@@ -24,7 +24,7 @@ metrics=str(parameters[4])
 print "env: "+ environment + " module: " + module + " metrics: " + metrics
 
 ####Function to get data from consul KV store
-consulServer=['172.23.1.215','172.23.1.153','172.23.1.69']
+consulServer=['']
 def getKeyData(dataKey,keys):
   connection="true"
   length=len(consulServer)
@@ -47,7 +47,7 @@ def getKeyData(dataKey,keys):
      exit("get key data failed for "+dataKey+", No connection to consul")
 
 ####getting config variables from consul
-os.environ['token'] = 'xoxb-145745833377-nLJFK9deLqSdqj8qE8qb6Qez'
+os.environ['token'] = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 data = getKeyData('app/phone_alert/config/twilio_accid',False)
 if data is not None :
    accid = data['Value']
