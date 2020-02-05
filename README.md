@@ -4,7 +4,7 @@
 [Twilio blog link](https://www.twilio.com/blog/2015/05/introducing-call-progress-events-flexibly-track-and-control-your-outbound-calls.html)
   
   
-###  Twilio on call support 
+###  Twilio api to escalate alerts/issues to on call support  
 
 ```
 +----------------+     +----------------+   +--------------+
