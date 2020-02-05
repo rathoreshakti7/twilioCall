@@ -1,6 +1,6 @@
 # twilioCall
 
-## Project CAll (twilio,gupshup)
+## Project twilioCall (twilio,gupshup)
 [Twilio blog link](https://www.twilio.com/blog/2015/05/introducing-call-progress-events-flexibly-track-and-control-your-outbound-calls.html)
   
   
