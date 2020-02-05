@@ -17,5 +17,5 @@ fwrite($myfile, "\n". $txt);
 fclose($myfile);
 $callStatus = $_REQUEST['CallStatus'];
 $sessionId = $_REQUEST['sessId'];
-exec('curl -X PUT 172.23.1.215:8500/v1/kv/app/phone_alert/call_tracker/' . $sessionId . '/status -d ' . $callStatus);
+exec('curl -X PUT x.x.x.x:8500/v1/kv/app/phone_alert/call_tracker/' . $sessionId . '/status -d ' . $callStatus);
 ?>
